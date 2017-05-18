@@ -9,11 +9,11 @@ import (
 )
 
 func main() {
-	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0")
+	firmataAdaptor := firmata.NewAdaptor("/dev/ttyUSB0")
 	led := gpio.NewLedDriver(firmataAdaptor, "13")
 
 	work := func() {
-		gobot.Every(1*time.Second, func() {
+		gobot.Every(2*time.Second, func() {
 			led.Toggle()
 		})
 	}
