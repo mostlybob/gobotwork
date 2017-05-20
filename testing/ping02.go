@@ -7,7 +7,8 @@ import (
 	"fmt"
 	"gobot.io/x/gobot"
 	"gobot.io/x/gobot/drivers/gpio"
-	"gobot.io/x/gobot/platforms/raspi"
+	// "gobot.io/x/gobot/platforms/raspi"  //original code
+	"gobot.io/x/gobot/platforms/firmata"
 	"time"
 )
 
