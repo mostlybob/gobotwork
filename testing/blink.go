@@ -14,7 +14,7 @@ func main() {
 	led := gpio.NewLedDriver(firmataAdaptor, "13")
 
 	work := func() {
-		gobot.Every(1*time.Second, func() {
+		gobot.Every(2*time.Second, func() {
 			led.Toggle()
 		})
 	}
