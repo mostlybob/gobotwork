@@ -6,5 +6,12 @@
 - went back to try it again and now it doesn't go; just has TX & RX lit up
   - interesting - when I switch away from the console window and then back, it kills the run
   - it looks like it's initializing the firmata connection, the pins and the LED, then initializing the bot, then starting the connections, then nothing
-  - blink responds the same way
-  
+- blink responds the same way
+  - tried re-uploading firmata from Arduino IDE
+    - no effect
+  - tried unplugging it & plugging it back in, & go running blink
+    - no effect
+  - tried unplugging it & plugging it back in, re-uploading firmata from Arduino IDE & go running blink
+    - no effect
+- so it seems like I'm back where (I thought) I was when I sat down: thinking it wasn't working, uploading firmata and boom, blink works, then try ping and puts it back to this
+- pretty sure I have the hardware for ping connected correctly, but that might be something
